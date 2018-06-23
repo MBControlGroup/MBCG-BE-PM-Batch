@@ -22,29 +22,29 @@
 
 - curl示例：
 
-```bash
-curl -X POST http://localhost:9600/upload \
-    -F "upload_batch=@/home/xujijun/soldiers.xlsx" \
-    -H "Content-Type: multipart/form-data"
-```
+    ```bash
+    curl -X POST http://localhost:9600/upload \
+        -F "upload_batch=@/home/xujijun/soldiers.xlsx" \
+        -H "Content-Type: multipart/form-data"
+    ```
 
 - HTML示例：
 
-```html
-<html>
-    <title>upload example</title>
+    ```html
+    <html>
+        <title>upload example</title>
 
-    <body>
+        <body>
 
-        <form action="http://www.mbcs.com/pm-batch/upload" method="post" enctype="multipart/form-data">
-            <label for="file">Filename:</label>
-            <input type="file" name="upload_batch" id="uploadFile">
-            <input type="submit" name="submit" value="Submit">
-        </form>
+            <form action="http://www.mbcs.com/pm-batch/upload" method="post" enctype="multipart/form-data">
+                <label for="file">Filename:</label>
+                <input type="file" name="upload_batch" id="uploadFile">
+                <input type="submit" name="submit" value="Submit">
+            </form>
 
-    </body>
-</html>
-```
+        </body>
+    </html>
+    ```
 
 - 备注：**目前仅支持导入xlsx文件！**
 
