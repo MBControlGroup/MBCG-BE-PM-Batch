@@ -20,7 +20,7 @@
     }
     ```
 - 示例表格文件：
-    - 下载地址：[民兵人事信息批量导入模板——腾讯文档](https://docs.qq.com/sheet/BqI21X2yZIht1OeHzN4IrNKM2Iakb11MNNKL0ISB8m2Ah7IV0IQmKC2Cjyb92wGXyJ4O7lD64PGxsB4QkS8Q0?opendocxfrom=admin#BB08J2)
+    - 下载地址：[model.xlsx](https://github.com/MBControlGroup/MBCG-BE-PM-Batch/raw/master/model.xlsx)
     - 字段依次为：
         1. 姓名
         2. 手机号码
