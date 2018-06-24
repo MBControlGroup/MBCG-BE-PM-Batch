@@ -1,0 +1,17 @@
+{
+    "server_cfg": {
+        "ip_addr": "0.0.0.0",
+        "port": "9600"
+    },
+    "db_cfg": {
+        "user": "mbcsdev",
+        "passwd": "mbcsdev2018",
+        "db_name": "MBDB",
+        "net": "tcp",
+        "ip_addr": "222.200.180.59",
+        "port": "9000",
+        "params": {
+            "charset": "utf8"
+        }
+    }
+}
