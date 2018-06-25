@@ -68,3 +68,28 @@
 
 - 响应：
     - 下载的文件
+
+## 项目说明
+
+### 技术选型
+
+- 语言：Golang 1.10.1
+- 数据库：MySQL 5.7.22
+- Web框架：Gin
+- ORM库：gorm
+- 部署工具：docker + rancher
+
+### 架构说明
+
+- vendor：各项依赖
+    - controllers：控制器，主要业务逻辑所在
+    - dao：直接与数据库交互的逻辑
+    - models：数据对象模板
+    - protocol：与客户端的通信协议（HTTP之上，使用JSON封装）
+    - routes：路由逻辑
+    - 第三方依赖
+- main.go：主函数入口，关联路径和routes中的模块
+
+### 前端效果
+
+![FE.png](./image/FE.png)
