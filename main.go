@@ -63,13 +63,9 @@ func main() {
 	router.Use(cors.Default())
 	router.Use(CorsHeadersMiddleWare()) // 允许所有源的cors配置
 
+	// OPTIONS 跨域配置
 	router.OPTIONS("/*action", func(ctx *gin.Context) {
 		ctx.JSON(http.StatusOK, struct{}{})
-	})
-
-	// test
-	router.GET("/", func(ctx *gin.Context) {
-		ctx.String(http.StatusOK, "ok")
 	})
 
 	// 批量导入
@@ -77,10 +73,6 @@ func main() {
 
 	// 批量导出
 	router.GET("/download", routes.Download)
-
-	router.POST("/try", func(ctx *gin.Context) {
-		ctx.String(http.StatusOK, "try ok")
-	})
 
 	router.Run(listenAddr)
 }
